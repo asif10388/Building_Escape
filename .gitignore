@@ -12,3 +12,4 @@ BuildingEscape/Content/StarterContent/
 #Visual Studio Generated Files We Don't Need To Worry About#
 #####################################################
 *.db
+BuildingEscape/.vs/BuildingEscape/v15/ipch/AutoPCH/ba68a4f153ddadf7/POSITIONREPORT.ipch
