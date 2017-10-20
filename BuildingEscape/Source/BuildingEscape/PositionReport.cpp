@@ -18,7 +18,8 @@ void UPositionReport::BeginPlay()
 {
 	Super::BeginPlay();
 
-	UE_LOG(LogTemp, Warning, TEXT("All hands on Unreal ahoy!!"));
+	FString ObjectName = GetOwner()->GetName();
+	UE_LOG(LogTemp, Warning, TEXT("Position Reposrt for %s"),*ObjectName);
 	
 }
 
