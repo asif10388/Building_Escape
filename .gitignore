@@ -17,3 +17,5 @@ BuildingEscape/.vs/BuildingEscape/v15/Solution.VC.db-shm
 BuildingEscape/.vs/BuildingEscape/v15/Solution.VC.db-wal
 BuildingEscape/.vs/BuildingEscape/v15/ipch/AutoPCH/3ce488a9ea4d1d42/OPENDOOR.ipch
 *.ipch
+BuildingEscape/Content/Extra_Features/KiteDemo/
+BuildingEscape/Content/Extra_Features/
