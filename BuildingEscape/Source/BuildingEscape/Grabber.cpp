@@ -33,8 +33,24 @@ void UGrabber::BeginPlay()
 		UE_LOG(LogTemp,Error,TEXT("Error! Missing component in %s "), *GetOwner()->GetName())
 	}
 	
-}
+	InputComponent = GetOwner()->FindComponentByClass<UInputComponent>();
+	if (InputComponent)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Component Found!"), *GetOwner()->GetName())
 
+		//Bind input action
+		InputComponent->BindAction("Grab", IE_Pressed, this, &UGrabber::Grab);
+
+
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("Error! Missing component in %s "), *GetOwner()->GetName())
+	}
+}
+void UGrabber::Grab() {
+	UE_LOG(LogTemp, Warning, TEXT("Key Pressed"))
+}
 
 // Called every frame
 void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
